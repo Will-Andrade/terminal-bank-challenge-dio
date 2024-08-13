@@ -71,9 +71,11 @@ One challenge faced was ensuring valid user input with a simple form of exceptio
 ## Next Steps
 
 - Add more features such as deposit, withdrawal, and transfer functionalities.
-- Implement more advanced input validation and error handling, maybe creating an app wide exception catcher and handle them from there.
-- Create unit tests to ensure the reliability of the input validation methods.
-- Format the balance of the user based on their locale
+- ~~Implement more advanced input validation and error handling, maybe creating an app 
+  wide exception catcher and handle them from there.~~ Unnecessary since I am already 
+  using the try-catch block.
+- ~~Create unit tests to ensure the reliability of the input validation methods.~~
+- ~~Format the balance of the user based on their locale~~
 
 ## Credits
 
