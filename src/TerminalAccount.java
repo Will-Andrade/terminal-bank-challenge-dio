@@ -1,3 +1,4 @@
+import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -40,10 +41,11 @@ public class TerminalAccount {
       }
       
       double balance = scanner.nextDouble();
+      String formattedBalance = formatBalanceToLocale(balance);
       
       System.out.println("Hello " + fullName + ", thank you for creating an account in " +
           "our bank, your agency is " + agencyNumber + ", account " + accountNumber +
-          " and your balance " + balance + " is already available for withdraw.");
+          " and your balance " + formattedBalance + " is already available for withdraw.");
     } catch (IllegalArgumentException e) {
       System.err.println(e.getMessage());
     } finally {
@@ -53,5 +55,13 @@ public class TerminalAccount {
   
   public static boolean isAPureString(String str) {
     return str.matches("^[a-zA-Z]+([\\s][a-zA-Z]+)*$");
+  }
+  
+  public static String formatBalanceToLocale(double balance) {
+    Locale userLocale = Locale.getDefault();
+    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(userLocale);
+    String formattedBalance = currencyFormatter.format(balance);
+    
+    return formattedBalance;
   }
 }
