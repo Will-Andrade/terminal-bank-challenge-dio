@@ -37,7 +37,7 @@ $ git clone git@github.com:Will-Andrade/terminal-bank-challenge-dio.git
 To compile and run the application, use the following commands:
 
 ```bash
-$ cd terminal-bank-account-simulator
+$ cd terminal-bank-challenge-dio
 $ javac TerminalAccount.java
 $ java TerminalAccount
 ```
