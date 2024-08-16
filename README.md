@@ -38,8 +38,8 @@ To compile and run the application, use the following commands:
 
 ```bash
 $ cd terminal-bank-challenge-dio
-$ javac TerminalAccount.java
-$ java TerminalAccount
+$ javac -d bin src/main/java/TerminalAccount.java
+$ java -cp bin main.java.TerminalAccount
 ```
 
 ## How to Use The Project
