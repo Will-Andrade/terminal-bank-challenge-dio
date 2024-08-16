@@ -25,13 +25,13 @@ You can clone this project to your local machine with this command on your CLI:
 - HTTPS
 
 ```bash
-$ git clone https://github.com/Will-Andrade/terminal-bank-account-simulator.git
+$ git clone https://github.com/Will-Andrade/terminal-bank-challenge-dio.git
 ```
 
 - SSH
 
 ```bash
-$ git clone git@github.com:Will-Andrade/terminal-bank-account-simulator.git
+$ git clone git@github.com:Will-Andrade/terminal-bank-challenge-dio.git
 ```
 
 To compile and run the application, use the following commands:
